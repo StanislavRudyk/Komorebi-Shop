@@ -1,73 +1,94 @@
-# 🛒 E-Commerce Fullstack (Docker Edition)
+# 🚀 Premium E-Commerce Stack (Docker Edition)
 
-Это готовое Fullstack-решение для интернет-магазина, полностью контейнеризированное. Включает в себя API на FastAPI, фронтенд на React и базу данных PostgreSQL с интерфейсом управления pgAdmin.
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
----
-
-## 🛠 Стек технологий в контейнерах
-* **Backend:** FastAPI (Python 3.10)
-* **Frontend:** React (TypeScript)
-* **Database:** PostgreSQL 15
-* **DB Management:** pgAdmin 4
-* **Orchestration:** Docker Compose
+Сучасна Fullstack-платформа для електронної комерції, побудована на потужному поєднанні **FastAPI** (Python), **React** та **PostgreSQL**. Проєкт повністю контейнеризований за допомогою Docker для швидкого та надійного розгортання.
 
 ---
 
-## 🚀 Быстрый запуск
+## ✨ Основні можливості
 
-### 1. Подготовка
-Убедитесь, что у вас установлены **Docker Desktop** и **Docker Compose**.
+- 🛡️ **Безпека**: Автентифікація користувачів та адмін-панель.
+- 🛍️ **Керування продуктами**: Гнучкий каталог товарів.
+- 🐳 **Docker-Ready**: Весь стек (бекенд, фронтенд, база даних) запускається однією командою.
+- 📊 **Моніторинг БД**: Інтегрований pgAdmin для зручного керування базою даних PostgreSQL.
 
-### 2. Запуск проекта
-В корневой директории проекта выполните команду:
+---
 
+## 🛠️ Технологічний стек
+
+- **Бекенд**: FastAPI (Python)
+- **Фронтенд**: React (с заздалегідь налаштованим оточенням)
+- **База даних**: PostgreSQL
+- **Оркестрація**: Docker Compose
+
+---
+
+## 🚀 Швидкий запуск
+
+### 1. Клонування репозиторію
 ```bash
-docker-compose up --build
+git clone https://github.com/StanislavRudyk/premium-ecommerce-stack.git
+cd premium-ecommerce-stack
 ```
 
-После запуска сервисы будут доступны по адресам:
+### 2. Запуск через Docker
+```bash
+docker-compose up -d --build
+```
+*Ця команда змонтує та запустить усі сервіси автоматично.*
 
-Frontend: http://localhost:3000
+---
 
-Backend API: http://localhost:8000
+## 🔑 Доступ та облікові дані
 
-Swagger UI (Документация): http://localhost:8000/docs
+### 🌍 Доступ до додатку
+- **Фронтенд**: [http://localhost:3000](http://localhost:3000)
+- **Бекенд (API Docs)**: [http://localhost:8000/docs](http://localhost:8000/docs)
+- **pgAdmin (БД)**: [http://localhost:5050](http://localhost:5050)
 
-pgAdmin (Управление БД): http://localhost:5050
+### 👤 Користувачі (За замовчуванням)
+| Роль        | Email               | Пароль     |
+| ----------- | ------------------- | ---------- |
+| **Admin**   | `admin@example.com` | `admin123` |
+| **User**    | `user@example.com`  | `user123`  |
 
-Данные для входа
+### 🐘 Доступ до pgAdmin
+- **Email**: `admin@admin.com`
+- **Пароль**: `admin`
 
-Доступ к приложению (Frontend)
-Администратор почта	admin@example.com	  пароль admin123
-Пользователь почта	user@example.com	 пароль user123
+---
 
-Управление базой данных (pgAdmin)
+## ⚙️ Налаштування з'єднання з БД (pgAdmin)
 
-URL: http://localhost:5050
+Для підключення до бази даних у pgAdmin використовуйте наступні параметри:
+- **Host**: `db`
+- **Port**: `5432`
+- **Maintenance Database**: `ecommerce`
+- **Username**: `postgres`
+- **Password**: `password`
 
-Логин (Email): admin@admin.com
+---
 
-Пароль: admin
+## 🏗️ Керування проєктом
 
-Настройка подключения к БД внутри pgAdmin: При добавлении нового сервера (Add New Server) используйте следующие данные:
+- **Зупинка**: `docker-compose down`
+- **Повна очистка даних**: `docker-compose down -v`
+- **Логи бекенду**: `docker logs ecommerce_backend -f`
+- **Оновлення фронтенду**: `docker-compose up --build frontend`
 
-Host name/address: db (это имя сервиса в Docker-сети)
+---
 
-Port: 5432
+## 📝 Перейменування репозиторію
 
-Maintenance database: ecommerce
+Щоб змінити назву репозиторію на GitHub:
+1. Перейдіть у вкладку **Settings** вашого репозиторію.
+2. В розділі **General**, змініть текст у полі **Repository name**.
+3. Натисніть кнопку **Rename**.
 
-Username: postgres
-
-Password: password
-
-Управление контейнерами
-
-Остановка: docker-compose down
-
-Остановка и удаление данных БД: docker-compose down -v
-
-Просмотр логов бэкенда: docker logs ecommerce_backend -f
-
-Пересборка фронтенда: docker-compose up --build frontend
-
+> [!IMPORTANT]
+> Після перейменування на GitHub, не забудьте оновити URL віддаленого репозиторію локально:
+> `git remote set-url origin https://github.com/StanislavRudyk/premium-ecommerce-stack.git`

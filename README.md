@@ -31,8 +31,8 @@
 
 ### 1. Клонування репозиторію
 ```bash
-git clone https://github.com/StanislavRudyk/premium-ecommerce-stack.git
-cd premium-ecommerce-stack
+git clone https://github.com/StanislavRudyk/E-Commerce-Fullstack-Docker-Edition-.git
+cd E-Commerce-Fullstack-Docker-Edition-
 ```
 
 ### 2. Запуск через Docker
@@ -81,14 +81,3 @@ docker-compose up -d --build
 - **Оновлення фронтенду**: `docker-compose up --build frontend`
 
 ---
-
-## 📝 Перейменування репозиторію
-
-Щоб змінити назву репозиторію на GitHub:
-1. Перейдіть у вкладку **Settings** вашого репозиторію.
-2. В розділі **General**, змініть текст у полі **Repository name**.
-3. Натисніть кнопку **Rename**.
-
-> [!IMPORTANT]
-> Після перейменування на GitHub, не забудьте оновити URL віддаленого репозиторію локально:
-> `git remote set-url origin https://github.com/StanislavRudyk/premium-ecommerce-stack.git`

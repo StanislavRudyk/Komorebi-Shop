@@ -1,11 +1,11 @@
-# 🚀 Premium E-Commerce Stack (Docker Edition)
+# 🌿 Komorebi-Shop (E-Commerce Docker Edition)
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
-Сучасна Fullstack-платформа для електронної комерції, побудована на потужному поєднанні **FastAPI** (Python), **React** та **PostgreSQL**. Проєкт повністю контейнеризований за допомогою Docker для швидкого та надійного розгортання.
+**Komorebi-Shop** — це естетична та потужна Fullstack-платформа для електронної комерції, побудована на поєднанні **FastAPI** (Python), **React** та **PostgreSQL**. Назва походить від японського слова *Komorebi* (木漏れ日), що означає сонячне світло, яке пробивається крізь листя дерев, символізуючи чистоту та якість нашого коду.
 
 ---
 
@@ -31,8 +31,8 @@
 
 ### 1. Клонування репозиторію
 ```bash
-git clone https://github.com/StanislavRudyk/E-Commerce-Fullstack-Docker-Edition-.git
-cd E-Commerce-Fullstack-Docker-Edition-
+git clone https://github.com/StanislavRudyk/Komorebi-Shop.git
+cd Komorebi-Shop
 ```
 
 ### 2. Запуск через Docker
